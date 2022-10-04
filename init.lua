@@ -1,3 +1,9 @@
+if not minetest.global_exists("jit") then
+	minetest.log("warning", "[jitprofiler] " ..
+		"Since LuaJIT is not being used, this mod is disabled.")
+	return
+end
+
 local profiler_start, profiler_stop
 do
 	local ie = minetest.request_insecure_environment()
