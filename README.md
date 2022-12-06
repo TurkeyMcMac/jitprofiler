@@ -21,6 +21,8 @@ for pinpointing expensive parts of mod code.
 
 ## Issues
 
+- This mod can cause the game to hang somehow. Most of the profiling data
+  collected before the hang is saved.
 - Sometimes a lot of C code execution is reported in suspicious places. I think
   this represents time taken by the Minetest engine, but I don't know why the
   profiler thinks the code is executed inside a Lua function.
